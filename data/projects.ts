@@ -179,7 +179,7 @@ export const projectsData: ProjectData[] = [
       ]
     },
     links: {
-      // github: 'https://github.com/saban-ercan/portfolio'
+      github: 'https://github.com/SabanErcan/portfolio-saban'
     },
     nextProject: {
       slug: 'qt-app',
@@ -188,45 +188,47 @@ export const projectsData: ProjectData[] = [
   },
   {
     id: 4,
-    slug: 'qt-app',
-    title: 'Application Qt C++',
-    subtitle: 'Interface Graphique Desktop',
-    category: 'Application Desktop',
+    slug: 'ocean-fft',
+    title: 'Ocean FFT Simulator',
+    subtitle: 'Simulation Océan Temps Réel',
+    category: 'Informatique Graphique',
     year: '2024',
-    duration: '2 mois',
+    duration: '3 mois',
     team: ['Saban Ercan'],
-    tech: ['C++', 'Qt Framework', 'CMake', 'SQLite', 'QML'],
-    description: 'Application desktop développée en C++ avec Qt Framework, démontrant la maîtrise des langages bas niveau et des interfaces graphiques natives multi-plateformes.',
-    problem: 'Développer une application desktop performante avec interface native, gestion de données locales et compatibilité multi-plateforme.',
-    solution: 'Utilisation du framework Qt avec architecture MVC, gestion des signaux/slots, base SQLite intégrée et interface QML moderne.',
+    tech: ['C++17', 'OpenGL 4.3', 'FFTW3', 'GLSL', 'ImGui', 'CMake'],
+    description: 'Simulateur d\'océan physiquement réaliste en temps réel utilisant la transformée de Fourier rapide (FFT) et le spectre de Phillips. Rendu avancé avec OpenGL 4.3 et shaders GLSL optimisés.',
+    problem: 'Comment créer une simulation d\'océan visuellement réaliste et performante (60 FPS) en utilisant des principes physiques avancés et le calcul parallèle GPU ?',
+    solution: 'Implémentation du spectre de Phillips avec 5 transformées FFT parallèles (height, choppy X/Z, normals X/Y), pipeline de rendu OpenGL complet avec displacement mapping, Fresnel reflections et génération d\'écume procédurale.',
     features: [
-      'Interface native Qt moderne',
-      'Architecture MVC robuste',
-      'Base de données SQLite intégrée',
-      'Gestion des fichiers système',
-      'Notifications système',
-      'Multi-plateforme (Windows/Linux/Mac)',
-      'Performances optimisées',
-      'Interface QML responsive'
+      'FFT temps réel avec FFTW3 (~3400 lignes C++)',
+      'Spectre de Phillips physiquement réaliste',
+      '5 transformées FFT par frame (height, choppy, normals)',
+      'Shaders GLSL avancés (displacement, Fresnel, foam)',
+      'Interface Dear ImGui avec 4 presets (Calme/Normal/Tempête/Cyclone)',
+      'Caméra FPS libre avec contrôles WASD',
+      'Mode wireframe pour visualisation technique',
+      'Performances optimisées 60 FPS @ 128×128',
+      'Cross-platform (Windows/Linux/macOS)',
+      'Architecture C++ moderne (RAII, smart pointers)'
     ],
-    challenges: 'Maîtriser les concepts avancés du C++ moderne, gérer la mémoire efficacement, créer une interface QML intuitive et assurer la compatibilité multi-plateforme.',
+    challenges: 'Maîtriser les transformées de Fourier et leur application au traitement du signal, optimiser les performances pour maintenir 60 FPS avec calculs FFT intensifs, implémenter des shaders complexes (Fresnel, subsurface scattering), gérer la symétrie hermitienne pour garantir des résultats réels.',
     results: [
-      'Application stable et performante',
-      'Interface utilisateur intuitive',
-      'Code C++ optimisé et maintenable',
-      'Compatible 3 plateformes',
-      'Gestion mémoire efficace',
-      'Architecture extensible'
+      '~3400 lignes de C++17 moderne',
+      '60 FPS constant @ résolution 128×128',
+      '30-45 FPS @ résolution 256×256',
+      'Pipeline complet vertex/fragment shaders',
+      'Gestion automatique ressources (RAII)',
+      'Documentation technique exhaustive (600+ lignes)',
+      'Production-ready avec logs et gestion d\'erreurs'
     ],
     images: {
-      hero: '/projects/qt/qt-hero.jpg',
+      hero: '/projects/projet4/image.png',
       gallery: [
-        '/projects/qt/qt-interface.jpg',
-        '/projects/qt/qt-features.jpg'
+        '/projects/projet4/image.png'
       ]
     },
     links: {
-      // github: 'https://github.com/saban-ercan/qt-app'
+      github: 'https://github.com/SabanErcan/OceanFFT-Simulator'
     },
     nextProject: {
       slug: 'nexus',

@@ -55,13 +55,13 @@ export default function Projects() {
     },
     {
       id: 4,
-      title: 'App Qt C++',
-      category: 'Application Desktop',
+      title: 'Ocean FFT Simulator',
+      category: 'Informatique Graphique',
       year: '2024',
-      image: '/projects/radar-3.png',
-      description: 'Interface graphique moderne en C++ avec Qt. Architecture modulaire et gestion efficace des données avec SQLite.',
-      slug: 'qt-app',
-      tech: ['C++', 'Qt', 'SQLite'],
+      image: '/projects/projet4/image.png',
+      description: 'Simulation océan temps réel avec FFT et spectre de Phillips. Rendu OpenGL avancé avec shaders GLSL optimisés.',
+      slug: 'ocean-fft',
+      tech: ['C++17', 'OpenGL', 'FFTW3'],
     },
   ];
 

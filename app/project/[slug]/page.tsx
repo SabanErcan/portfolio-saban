@@ -256,6 +256,14 @@ export default function ProjectPage() {
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 80vw"
                 />
+              ) : project.slug === 'ocean-fft' ? (
+                <Image
+                  src="/projects/projet4/image.png"
+                  alt="Ocean FFT Simulator"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 80vw"
+                />
               ) : (
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="text-center">
